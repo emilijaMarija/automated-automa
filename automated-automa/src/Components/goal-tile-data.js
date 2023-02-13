@@ -58,7 +58,7 @@ const wildFoodIcon = {
     alt: 'Food',
 }
 
-export const GoalTileData = [
+export const goalTileData = [
     {
         id: 0,
         icon1: [eggIcon],
@@ -155,6 +155,9 @@ export const GoalTileData = [
         text2: 'WITH',
         icon2: [eggIcon],
     },
+]
+
+export const europeGoalTileData = [
     {
         id: 8,
         text1: 'FOOD COST OF PLAYED',
