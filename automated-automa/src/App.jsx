@@ -5,11 +5,11 @@ import RoundGoalTile from "./Components/RoundGoalTile.jsx";
 import {GoalTileData} from "./Components/goal-tile-data.js";
 
 function App() {
+    const randomGoalIndex = Math.floor(Math.random() * GoalTileData.length)
+
     return (
         <div className="App">
-            {GoalTileData.map((item, index) =>
-                <RoundGoalTile key={index} {...item} />
-            )}
+            <RoundGoalTile {...GoalTileData[randomGoalIndex]} />
         </div>
     )
 }
