@@ -17,6 +17,9 @@
     width: 100%;
     height: 100%;
     background-color: #f2edea;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% auto;
     clip-path: polygon(
             0 25%,
             25% 0,
@@ -45,5 +48,6 @@
 .goal-tile__text {
     color: #000000;
     font-family: "Cardenio Bold", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    max-height: 25%;
+    max-width: 41%;
+    text-align: center;
 }

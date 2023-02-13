@@ -1,11 +1,13 @@
 import './round-goal-tile.css'
-import { string, shape, arrayOf } from "prop-types";
+import {string, shape, arrayOf} from "prop-types";
 
-const RoundGoalTile = ( { text1, icon1, text2, icon2 } ) => {
+const RoundGoalTile = ({text1, icon1, text2, icon2, background}) => {
     return (
         <div className='goal-tile'>
-            <div className='goal-tile__container'>
-                {text1 && <span className='goal-tile__text'>{text1}</span>}
+            <div className='goal-tile__container' style={background && {backgroundImage: `url(${background})`}}>
+                {text1 && <span className='goal-tile__text'>
+                    {text1}
+                </span>}
                 {icon1 && <div className='goal-tile__icon-container'>
                     {icon1.map((image, index) =>
                         <img key={index}
@@ -39,6 +41,7 @@ RoundGoalTile.propTypes = {
         src: string,
         alt: string,
     })),
+    background: string,
 }
 
 export default RoundGoalTile

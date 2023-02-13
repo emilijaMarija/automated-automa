@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgb(0, 0, 0);
-  background-color: #e7c89b;
+  background: #efebe2 url("./Assets/images/Background.jpg") repeat fixed center;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
