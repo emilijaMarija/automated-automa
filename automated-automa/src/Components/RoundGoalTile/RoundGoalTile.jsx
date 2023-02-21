@@ -35,7 +35,6 @@ const RoundGoalTile = ({ text1, icon1, text2, icon2, background }) => {
           </div>
         )}
       </div>
-      ;
     </div>
   )
 }

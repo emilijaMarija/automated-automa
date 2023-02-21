@@ -1,19 +1,27 @@
 import React, { useState } from 'react'
 
 import './App.css'
-import RoundGoalTile from './Components/RoundGoalTile.jsx'
-import { vanillaGoalTileData, europeGoalTileData } from './Components/goal-tile-data.js'
+import RoundGoalTile from './Components/RoundGoalTile/RoundGoalTile.jsx'
+import Button from './Components/Button/Button.jsx'
+import {
+  vanillaGoalTileData,
+  europeGoalTileData
+} from './Components/RoundGoalTile/goal-tile-data.js'
 
 function App () {
   const [tileData, setTileData] = useState(vanillaGoalTileData)
-  const [goalTileIndex, setGoalTileIndex] = useState(Math.floor(Math.random() * tileData.length))
+  const [goalTileIndex, setGoalTileIndex] = useState(
+    Math.floor(Math.random() * tileData.length)
+  )
 
   const setRandomGoalIndex = () => {
     setGoalTileIndex(Math.floor(Math.random() * tileData.length))
   }
 
-  const handleExpansions = (e) => {
-    e.target.checked ? setTileData(vanillaGoalTileData.concat(europeGoalTileData)) : setTileData(vanillaGoalTileData)
+  const handleExpansions = e => {
+    e.target.checked
+      ? setTileData(vanillaGoalTileData.concat(europeGoalTileData))
+      : setTileData(vanillaGoalTileData)
   }
 
   return (
@@ -25,7 +33,7 @@ function App () {
         </label>
       </div>
       <RoundGoalTile {...tileData[goalTileIndex]} />
-      <button onClick={setRandomGoalIndex}>New Tile</button>
+      <Button onClick={setRandomGoalIndex} text='New Tile' />
     </div>
   )
 }
