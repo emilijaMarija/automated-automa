@@ -7,6 +7,7 @@ import {
   vanillaGoalTileData,
   europeGoalTileData
 } from './Components/RoundGoalTile/goal-tile-data.js'
+import Checkbox from './Components/Checkbox/Checkbox.jsx'
 
 function App () {
   const [tileData, setTileData] = useState(vanillaGoalTileData)
@@ -26,12 +27,10 @@ function App () {
 
   return (
     <div className='App'>
-      <div className='checkbox-container'>
-        <label>
-          <input type='checkbox' onChange={handleExpansions} />
-          INCLUDE EUROPEAN EXPANSION TILES
-        </label>
-      </div>
+      <Checkbox
+        text='INCLUDE EUROPEAN EXPANSION TILES'
+        onChange={handleExpansions}
+      />
       <RoundGoalTile {...tileData[goalTileIndex]} />
       <Button onClick={setRandomGoalIndex} text='New Tile' />
     </div>
