@@ -13,11 +13,3 @@
   src: local("Cardenio-Modern-Bold"),
   url("./Assets/fonts/Cardenio-Modern-Bold.ttf") format("truetype");
 }
-
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}

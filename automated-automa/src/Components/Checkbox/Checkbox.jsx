@@ -2,17 +2,17 @@ import { func, string } from 'prop-types'
 import './checkbox.css'
 import React from 'react'
 
-const Checkbox = ({ onChange, text }) => {
+const Checkbox = ({ onChange, labelText }) => {
   return (
     <label className='checkbox-label'>
       <input className='checkbox-input' type='checkbox' onChange={onChange} />
-      {text}
+      {labelText}
     </label>
   )
 }
 
 Checkbox.propTypes = {
-  text: string,
+  labelText: string,
   onChange: func
 }
 
