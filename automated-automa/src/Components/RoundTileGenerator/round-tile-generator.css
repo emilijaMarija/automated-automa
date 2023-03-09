@@ -5,3 +5,8 @@
     align-items: center;
     gap: 20px;
 }
+
+.generator-tile-container {
+    height: 200px;
+    width: 200px;
+}

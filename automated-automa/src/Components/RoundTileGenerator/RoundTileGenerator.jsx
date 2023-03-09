@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 
 import './round-tile-generator.css'
 import Checkbox from '../Checkbox/Checkbox.jsx'
@@ -8,8 +8,10 @@ import {
   europeGoalTileData,
   vanillaGoalTileData
 } from '../RoundGoalTile/goal-tile-data.js'
+import { GoalTileOnScreenContext } from '../../Context/GoalTileOnScreenContext.jsx'
 
 function RoundTileGenerator () {
+  const { goalTiles, addGoalTile } = useContext(GoalTileOnScreenContext)
   const [preferences, setPreferences] = useState({
     europeEnabled: false
   })
@@ -24,7 +26,13 @@ function RoundTileGenerator () {
       tileData = vanillaGoalTileData
     }
 
-    setGoalTile(tileData[Math.floor(Math.random() * tileData.length)])
+    let newTile = tileData[Math.floor(Math.random() * tileData.length)]
+    while (goalTiles.includes(newTile)) {
+      newTile = tileData[Math.floor(Math.random() * tileData.length)]
+    }
+
+    setGoalTile(newTile)
+    addGoalTile(newTile)
   }
 
   const handleExpansions = e => {
@@ -37,7 +45,9 @@ function RoundTileGenerator () {
         labelText='INCLUDE EUROPEAN EXPANSION TILES'
         onChange={handleExpansions}
       />
-      <RoundGoalTile {...goalTile} />
+      <div className='generator-tile-container'>
+        <RoundGoalTile {...goalTile} />
+      </div>
       <Button onClick={setRandomGoalTile} text='New Tile' />
     </div>
   )

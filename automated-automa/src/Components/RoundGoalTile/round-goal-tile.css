@@ -1,5 +1,5 @@
 .goal-tile {
-    --goal-tile-size: 200px;
+    --goal-tile-size: 100%;
 
     width: var(--goal-tile-size);
     height: var(--goal-tile-size);
