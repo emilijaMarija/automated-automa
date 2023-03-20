@@ -181,10 +181,12 @@ export const europeGoalTileData = [
     id: 10,
     icon1: [birdIcon],
     text2: 'WORTH',
-    icon2: [{
-      src: 'src/Assets/icons/OverFourPoints.png',
-      alt: 'More Than Four Points'
-    }]
+    icon2: [
+      {
+        src: 'src/Assets/icons/OverFourPoints.png',
+        alt: 'More Than Four Points'
+      }
+    ]
   },
   {
     id: 10,

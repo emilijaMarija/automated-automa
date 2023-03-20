@@ -8,7 +8,18 @@ const RoundGoalTile = ({ text1, icon1, text2, icon2, background }) => {
         className='goal-tile__bg-image'
         style={background && { backgroundImage: `url(${background})` }}
       >
-        {text1 && <span className='goal-tile__text'>{text1}</span>}
+        {text1 && (
+          <svg className='goal-tile__text' viewBox='0 0 60 17'>
+            <text
+              x='50%'
+              y='50%'
+              dominantBaseline='central'
+              textAnchor='middle'
+            >
+              {text1}
+            </text>
+          </svg>
+        )}
         {icon1 && (
           <div className='goal-tile__icon-container'>
             {icon1.map((image, index) => (
@@ -21,7 +32,19 @@ const RoundGoalTile = ({ text1, icon1, text2, icon2, background }) => {
             ))}
           </div>
         )}
-        {text2 && <span className='goal-tile__text'>{text2}</span>}
+        {text2 && (
+          <svg className='goal-tile__text' viewBox='0 0 60 17'>
+            <text
+              x='50%'
+              y='50%'
+              dominantBaseline='central'
+              textAnchor='middle'
+              className='goal-tile__text'
+            >
+              {text2}
+            </text>
+          </svg>
+        )}
         {icon2 && (
           <div className='goal-tile__icon-container'>
             {icon2.map((image, index) => (

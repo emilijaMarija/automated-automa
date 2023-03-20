@@ -15,13 +15,16 @@ function GoalTileBoard () {
           tile === null ? (
             <div key={i}> </div>
           ) : (
-            <div className='goal-tile-on-board-container' key={i}>
-              <span
+            <div key={i}>
+              <button
+                type='button'
+                aria-label='Remove'
+                aria-hidden='true'
                 className='remove-tile-button'
                 onClick={() => removeGoalTile(i)}
               >
                 &times;
-              </span>
+              </button>
               <RoundGoalTile {...tile} />
             </div>
           )

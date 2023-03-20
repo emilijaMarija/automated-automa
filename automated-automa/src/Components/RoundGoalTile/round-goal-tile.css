@@ -17,7 +17,8 @@
     background-color: #f2edea;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 90% auto;
+    background-size: 90%;
+    /*clips corners so that darker background color of parent is shown*/
     clip-path: polygon(
             0 25%,
             25% 0,
@@ -48,6 +49,5 @@
     color: #000000;
     font-family: "Cardenio Bold", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     max-width: 40%;
-    text-align: center;
-    font-size: inherit;
+    overflow: visible;
 }
