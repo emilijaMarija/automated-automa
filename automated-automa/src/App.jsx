@@ -7,8 +7,11 @@ import GoalTileBoard from './Components/GoalTileBoard/GoalTileBoard.jsx'
 function App () {
   return (
     <div className='App'>
-      <RoundTileGenerator />
-      <GoalTileBoard />
+      <h1>End-Of-Round Goal Tile Randomiser</h1>
+      <div className='round-goal-tile-randomiser'>
+        <RoundTileGenerator />
+        <GoalTileBoard />
+      </div>
     </div>
   )
 }

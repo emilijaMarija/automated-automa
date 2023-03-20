@@ -1,7 +1,3 @@
-#root {
-  margin: 0 auto;
-}
-
 @font-face {
   font-family: "Cardenio";
   src: local("Cardenio-Modern"),
@@ -14,9 +10,28 @@
   url("./Assets/fonts/Cardenio-Modern-Bold.ttf") format("truetype");
 }
 
+#root {
+  display: flex;
+  place-content: center;
+}
+
 .App {
+  margin: auto 4rem;
+}
+
+.round-goal-tile-randomiser {
+  width: 85vw;
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15%;
+  gap: 10%;
+}
+
+@media screen and (max-width: 780px) {
+  .round-goal-tile-randomiser {
+    flex-direction: column;
+    gap: 25px;
+    height: 80vh;
+  }
 }

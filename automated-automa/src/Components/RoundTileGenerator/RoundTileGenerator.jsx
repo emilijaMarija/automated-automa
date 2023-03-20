@@ -27,8 +27,12 @@ function RoundTileGenerator () {
     }
 
     let newTile = tileData[Math.floor(Math.random() * tileData.length)]
-    while (goalTiles.includes(newTile)) {
-      newTile = tileData[Math.floor(Math.random() * tileData.length)]
+
+    for (const existingTile of goalTiles) {
+      console.log(existingTile)
+      if (existingTile && existingTile.id === newTile.id) {
+        newTile = tileData[Math.floor(Math.random() * tileData.length)]
+      }
     }
 
     setGoalTile(newTile)

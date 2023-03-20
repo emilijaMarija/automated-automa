@@ -3,9 +3,9 @@ import { string, shape, arrayOf } from 'prop-types'
 
 const RoundGoalTile = ({ text1, icon1, text2, icon2, background }) => {
   return (
-    <div className='goal-tile'>
+    <div className='goal-tile__corners'>
       <div
-        className='goal-tile__container'
+        className='goal-tile__bg-image'
         style={background && { backgroundImage: `url(${background})` }}
       >
         {text1 && <span className='goal-tile__text'>{text1}</span>}

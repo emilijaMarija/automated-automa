@@ -3,10 +3,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
+    width: 20%;
 }
 
 .generator-tile-container {
-    height: 200px;
-    width: 200px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+    .generator-container {
+        width: initial;
+        height: 50%;
+    }
+
+    .generator-tile-container {
+        padding: 5%;
+        box-sizing: border-box;
+        height: clamp(10%, 80vw, 70%);
+        width: initial;
+    }
 }
