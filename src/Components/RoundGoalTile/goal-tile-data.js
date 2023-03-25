@@ -1,60 +1,76 @@
+import Egg from '../../Assets/icons/Egg.png'
+import Bird from '../../Assets/icons/Bird.png'
+import FlockingBird from '../../Assets/icons/Flocking-bird.png'
+import Card from '../../Assets/icons/Card.png'
+import Forest from '../../Assets/icons/Forest.png'
+import Grassland from '../../Assets/icons/Grassland.png'
+import Wetland from '../../Assets/icons/Wetland.png'
+import GroundNest from '../../Assets/icons/Ground-nest.png'
+import Platform from '../../Assets/icons/Platform.png'
+import BowlNest from '../../Assets/icons/Bowl-nest.png'
+import Cavity from '../../Assets/icons/Cavity.png'
+import Food from '../../Assets/icons/AnyFood.png'
+import OverFourPoints from '../../Assets/icons/OverFourPoints.png'
+import BrownBackground from '../../Assets/icons/BrownBackground.png'
+import WhiteBackground from '../../Assets/icons/WhiteBackground.png'
+
 const eggIcon = {
-  src: 'src/Assets/icons/Egg.png',
+  src: Egg,
   alt: 'Eggs'
 }
 
 const birdIcon = {
-  src: 'src/Assets/icons/Bird.png',
+  src: Bird,
   alt: 'Birds'
 }
 
 const tuckedBirdIcon = {
-  src: 'src/Assets/icons/Flocking-bird.png',
+  src: FlockingBird,
   alt: 'Birds with tucked cards'
 }
 
 const cardIcon = {
-  src: 'src/Assets/icons/Card.png',
+  src: Card,
   alt: 'Cards'
 }
 
 const forestIcon = {
-  src: 'src/Assets/icons/Forest.png',
+  src: Forest,
   alt: 'Forest'
 }
 
 const grasslandIcon = {
-  src: 'src/Assets/icons/Grassland.png',
+  src: Grassland,
   alt: 'Grassland'
 }
 
 const wetlandIcon = {
-  src: 'src/Assets/icons/Wetland.png',
+  src: Wetland,
   alt: 'Wetland'
 }
 
 const groundNestIcon = {
-  src: 'src/Assets/icons/Ground-nest.png',
+  src: GroundNest,
   alt: 'Ground Nest'
 }
 
 const platformNestIcon = {
-  src: 'src/Assets/icons/Platform.png',
+  src: Platform,
   alt: 'Platform Nest'
 }
 
 const bowlNestIcon = {
-  src: 'src/Assets/icons/Bowl-nest.png',
+  src: BowlNest,
   alt: 'Bowl Nest'
 }
 
 const cavityNestIcon = {
-  src: 'src/Assets/icons/Cavity.png',
+  src: Cavity,
   alt: 'Cavity Nest'
 }
 
 const wildFoodIcon = {
-  src: 'src/Assets/icons/AnyFood.png',
+  src: Food,
   alt: 'Food'
 }
 
@@ -183,7 +199,7 @@ export const europeGoalTileData = [
     text2: 'WORTH',
     icon2: [
       {
-        src: 'src/Assets/icons/OverFourPoints.png',
+        src: OverFourPoints,
         alt: 'More Than Four Points'
       }
     ]
@@ -207,11 +223,11 @@ export const europeGoalTileData = [
   {
     id: 12,
     text1: 'BROWN POWERS',
-    background: 'src/Assets/icons/BrownBackground.png'
+    background: BrownBackground
   },
   {
     id: 12,
     text1: 'WHITE & NO POWERS',
-    background: 'src/Assets/icons/WhiteBackground.png'
+    background: WhiteBackground
   }
 ]
