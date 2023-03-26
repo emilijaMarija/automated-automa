@@ -45,10 +45,3 @@
 .goal-tile__icon {
     height: 100%;
 }
-
-.goal-tile__text {
-    color: #000000;
-    font-family: "Cardenio Bold", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    max-width: 40%;
-    overflow: visible;
-}
