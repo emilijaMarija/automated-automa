@@ -1,3 +1,5 @@
+@use '../../Assets/style/mixins';
+
 .goal-tile__corners {
     aspect-ratio: 1 / 1;
     width: 100%;
@@ -51,9 +53,8 @@
     color: #000000;
     font-family: "Cardenio Bold", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     text-align: center;
-    vertical-align: middle;
     font-size: max(0.25rem, 10cqw);
     line-height: 1.1;
     max-width: 45%;
-    padding-bottom: 0;
+    @include mixins.lhCrop(1.1);
 }
