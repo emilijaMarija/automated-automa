@@ -19,6 +19,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 90%;
+    container-type: size;
     /*clips corners so that darker background color of parent is shown*/
     clip-path: polygon(
             0 25%,
@@ -44,4 +45,15 @@
 
 .goal-tile__icon {
     height: 100%;
+}
+
+.goal-tile__text {
+    color: #000000;
+    font-family: "Cardenio Bold", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: max(0.25rem, 10cqw);
+    line-height: 1.1;
+    max-width: 45%;
+    padding-bottom: 0;
 }

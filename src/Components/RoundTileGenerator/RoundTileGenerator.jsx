@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 
-import './round-tile-generator.css'
+import './round-tile-generator.scss'
 import Checkbox from '../Checkbox/Checkbox.jsx'
 import RoundGoalTile from '../RoundGoalTile/RoundGoalTile.jsx'
 import Button from '../Button/Button.jsx'

@@ -1,5 +1,5 @@
 import { func, string } from 'prop-types'
-import './button.css'
+import './button.scss'
 
 const Button = ({ onClick, text }) => {
   return (

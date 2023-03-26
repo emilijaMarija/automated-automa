@@ -1,5 +1,5 @@
 import { func, string } from 'prop-types'
-import './checkbox.css'
+import './checkbox.scss'
 import React from 'react'
 
 const Checkbox = ({ onChange, labelText }) => {

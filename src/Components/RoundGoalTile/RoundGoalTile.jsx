@@ -1,6 +1,5 @@
-import './round-goal-tile.css'
+import './round-goal-tile.scss'
 import { string, shape, arrayOf } from 'prop-types'
-import TextResponsiveToContainerSize from '../TextResponsiveToContainerSize/TextResponsiveToContainerSize.jsx'
 
 const RoundGoalTile = ({ text1, icon1, text2, icon2, background }) => {
   return (
@@ -9,7 +8,7 @@ const RoundGoalTile = ({ text1, icon1, text2, icon2, background }) => {
         className='goal-tile__bg-image'
         style={background && { backgroundImage: `url(${background})` }}
       >
-        {text1 && <TextResponsiveToContainerSize text={text1} />}
+        {text1 && <span className='goal-tile__text'>{text1}</span>}
         {icon1 && (
           <div className='goal-tile__icon-container'>
             {icon1.map((image, index) => (
@@ -22,7 +21,7 @@ const RoundGoalTile = ({ text1, icon1, text2, icon2, background }) => {
             ))}
           </div>
         )}
-        {text2 && <TextResponsiveToContainerSize text={text2} />}
+        {text2 && <span className='goal-tile__text'>{text2}</span>}
         {icon2 && (
           <div className='goal-tile__icon-container'>
             {icon2.map((image, index) => (
